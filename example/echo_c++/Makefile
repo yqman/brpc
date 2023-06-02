@@ -26,6 +26,7 @@ ifeq ($(NEED_GPERFTOOLS), 1)
 endif
 HDRS+=$(BRPC_PATH)/output/include
 LIBS+=$(BRPC_PATH)/output/lib
+LIBS+=/usr/local/lib
 
 HDRPATHS=$(addprefix -I, $(HDRS))
 LIBPATHS=$(addprefix -L, $(LIBS))
